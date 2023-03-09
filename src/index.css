@@ -11,3 +11,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.search-container {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.main-container {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.pokemon-image {
+  width: 100px;
+  margin: 30px auto;
+}
+
+.image-container:hover {
+  background-color: hsla(217, 89%, 51%, 0.5);
+}
+
+.pokemon-image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.update-container {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  -ms-transform: translate(-50%, -110%);
+  text-align: center;
+}
+
+.image-container:hover .pokemon-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .update-container {
+  opacity: 1;
+}
+
+.update-text {
+  background-color: hsla(217, 89%, 51%, 0.5);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.poke-divider {
+  border-top: 1px dashed white;
+}

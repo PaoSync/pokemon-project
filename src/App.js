@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import PokeSearchBox from './components/PokeSearchBox';
+import PokemonsDeck from './components/PokemonsDeck';
 
 function App() {
+
+  console.log('flag 01');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" class="bg-dark main-container">
+
+      <PokeSearchBox />
+      <hr class="hr hr-blurry poke-divider" />
+      <div>
+        <PokemonsDeck />
+      </div>
     </div>
   );
 }
